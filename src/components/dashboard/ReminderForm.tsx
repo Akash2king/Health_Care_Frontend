@@ -12,7 +12,7 @@ const ReminderForm = () => {
     try {
       const newReminderId = new Date().getTime().toString();
       await set(ref(db, `reminders/${newReminderId}`), {
-        reminder,
+        reminder,  // Correct key
         time: reminderTime
       });
       
