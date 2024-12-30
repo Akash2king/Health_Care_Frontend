@@ -36,12 +36,12 @@ const Navbar = ({ onNavigate, currentPage }: NavbarProps) => {
               active={currentPage === 'dashboard'}
               onClick={() => onNavigate('dashboard')}
             />
-            {/* <NavItem
+            <NavItem
               icon={<Bell size={20} />}
               text="reminders"
               active={currentPage === 'reminders'}
               onClick={() => onNavigate('reminders')}
-            /> */}
+            />
           </div>
         </div>
       </div>
